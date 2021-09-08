@@ -1,0 +1,15 @@
+#include <iostream>
+#include "etudiant.cpp"
+using namespace std;
+void calculMoyenne( Etudiant etd1, Etudiant etd2){
+double moyenne = (etd1.cote + etd2.cote) /2;
+cout << "la moyenne de cote est :" << moyenne;
+}
+int main()
+{
+    Etudiant etd1(18);
+    Etudiant etd2(14.5);
+    calculMoyenne (etd1,etd2);
+
+    return 0;
+}

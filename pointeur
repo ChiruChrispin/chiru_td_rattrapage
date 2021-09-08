@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float tab[5];
+
+    cout << "Entrer cinq valeurs" << endl;
+    for (int i=0; i<5; i++){
+        cin >>*(tab +i);
+        // Equivalent a
+        // cin >> tab[i]
+    }
+    cout <<"les valeurs entrees sont: " << endl;
+    for(int i=0; i<5; i++){
+        cout << *(tab +i)<< endl;
+        //Equivalent a
+        // cout << tab[i]
+    }
+
+
+
+return 0;
+}

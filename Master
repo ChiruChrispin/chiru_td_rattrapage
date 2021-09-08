@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   double decimalD = 24.26;
+    float decimalF = 25.6;
+    char c = 'c';
+    bool bl = true;
+    long lg = 100000;
+    string str = "String";
+    int entier = 10;
+    cout  << "decimalD: " << decimalD << endl;
+    cout << "decimalF: " << decimalF << endl;
+    cout << "char: " << c << endl;
+    cout << "bool: " << bl <<endl;
+    cout << "long: " <<lg  <<endl;
+    cout << "Int:" <<entier<< endl;
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+#include "heritage.cpp"
+using namespace std;
+
+int main()
+{
+    Chien chien;
+    chien.pattes=4;
+
+    Plante plante;
+    plante.age = 50;
+
+    chien.respirer();
+    chien.sedeplacer();
+    plante.respirer();
+    plante.absorber();
+
+    return 0;
+}

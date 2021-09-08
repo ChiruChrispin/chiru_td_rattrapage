@@ -1,0 +1,14 @@
+#include <iostream>
+#include "heritage.cpp"
+using namespace std;
+int a;
+
+int main()
+{
+    int a = 5;
+    cout<< "locale: "<< a << "globale" << :: a ;
+
+
+    return 0;
+}
+

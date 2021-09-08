@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+struct Adresse {
+char ville [20];
+int numero;
+float latitude;
+
+};
+int main()
+{ Adresse adresse;
+// Saisie des valeurs d'une structure
+cout << "Entrer votre adresse" << endl;
+cout << "Entrer la ville " << endl;
+cin.get(adresse.ville, 20);
+
+cout << "Entrer le numero de la maison"<< endl;
+cin>> adresse.numero;
+
+cout<< "Entrer la latitude"<< endl;
+cin >> adresse.latitude;
+
+// Affichage des valeur d'une structure
+Adresse *adrsPoint;
+adrsPoint = &adresse;
+cout << "\n Vous habitez: " << endl;
+cout << "Ville: " << adrsPoint->ville << endl;
+cout << "Numero:" << adrsPoint->numero << endl;
+cout << "Latitude:"<< adrsPoint->latitude<< endl;
+
+return 0;
+
+
+
+return 0;
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+void affiche (char ='*', int =3);
+int main()
+{
+    affiche(100,7);
+return 0;
+}
+void affiche (char c, int num){
+for (int i=0; i<num; ++i){
+    cout <<c<<" ";
+}
+cout << endl;
+}

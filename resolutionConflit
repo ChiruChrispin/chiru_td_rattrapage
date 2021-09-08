@@ -1,0 +1,40 @@
+#include <iostream>
+#include "heritage.cpp"
+// conflitHeritage
+using namespace std;
+class A{
+public:
+     int x;
+   A() { x= 10;}
+    };
+
+
+
+class B {
+public:
+    int x;
+    B(){x = 20;}
+
+};
+class C : public A,B {
+public:
+    void afficher(){
+    std::cout << "x de A:"<< A::x << std::endl;
+    std::cout << "x de B:" <<B::x;}
+
+
+
+};
+
+int main()
+{
+   C c;
+   c.afficher();
+
+
+    return 0;
+}
+
+
+
+

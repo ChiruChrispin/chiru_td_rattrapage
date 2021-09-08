@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+
+enum permission {ADMIN, SUPER_ADMIN, USER};
+
+int main ()
+{
+permission permis;
+cout <<"entrer votre permission" << endl;
+int intPermis;
+cin>> intPermis;
+switch (intPermis)
+{
+case 0:
+    permis = SUPER_ADMIN;
+    break;
+case 1:
+    permis = ADMIN;
+    break;
+default:
+    permis = USER;
+
+}
+switch (permis){
+case SUPER_ADMIN:
+    cout<< "vous avez acces a tout"<< endl;
+    break;
+    case ADMIN:
+    cout<< "vous pouvez gerer les utilisateurs"<< endl;
+    break;
+    case USER:
+    cout<< "vous etes un utlisateur"<< endl;
+    break;
+
+
+}
+return 0;
+
+
+
+
+
+
+
+}

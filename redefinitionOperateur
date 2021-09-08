@@ -1,0 +1,20 @@
+#include <iostream>
+#include "complexe.cpp"
+using namespace std;
+
+int main()
+{
+    Complexe cmplx1(5.6,8.2);
+    Complexe cmplx2 (1.6,-3.2);
+
+    cout << cmplx1.reel <<"+"<<cmplx1.imaginaire << "j (++) = " ;
+    cmplx1++;
+    cout << cmplx1.reel << "+"<< cmplx1.imaginaire << "j"<< endl;
+
+    Complexe cmplx3 = cmplx1 + cmplx2;
+    cout << cmplx1.reel <<"+"<<cmplx1.imaginaire << "j +  " ;
+    cout << cmplx2.reel <<"+"<<cmplx2.imaginaire << "j = " ;
+    cout << cmplx3.reel <<"+"<<cmplx3.imaginaire << "  j  " ;
+
+    return 0;
+}

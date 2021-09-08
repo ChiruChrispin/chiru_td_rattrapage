@@ -1,0 +1,14 @@
+#include <iostream>
+#include "Salle.cpp"
+using namespace std;
+
+int main()
+{
+    Salle salle1;
+    salle1.initInfo ();
+
+    cout << "surface = " << salle1.surface() << endl;
+    cout << "Volume =  " << salle1.volume()  << endl;
+
+    return 0;
+}

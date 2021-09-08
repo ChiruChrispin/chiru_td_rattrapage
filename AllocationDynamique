@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ float* pointVar;
+ pointVar = new float;
+ *pointVar = 25.68;
+ cout << *pointVar;
+ return 0;
+return 0;
+}
